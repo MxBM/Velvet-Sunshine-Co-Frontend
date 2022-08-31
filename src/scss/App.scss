@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
+@import "./Variables.scss";
+@import "./Breakpoints.scss";
+@import "./components/Navbar.scss";
+
+.light-theme {
+  $color-text: $color-text-light;
+  $color-bg: $color-bg-light;
+  $color-pink: $color-pink-light;
+  $color-green: $color-green-light;
+  $color-blue: $color-blue-light;
+}
+
+.dark-theme {
+  --color-text: $color-text-dark;
+  --color-bg: $color-bg-dark;
+  --color-pink: $color-pink-dark;
+  --color-green: $color-green-dark;
+  --color-blue: $color-blue-dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  //Will affect html & body tags.
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+html,
+body,
+.App {
+  overflow: visible;
+  background: $color-bg-light;
+}
