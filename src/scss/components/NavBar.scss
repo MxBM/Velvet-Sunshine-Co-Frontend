@@ -17,10 +17,19 @@ header {
         font-weight: 700;
         color: black; //TODO: Dynamic Variables
         font-size: 1.875rem;
+        display: flex;
         .theme-mode {
-          justify-content: space-between;
-          display: inline-block;
-          padding-left: 2rem;
+          list-style: none;
+          padding-left: 1rem;
+          .sun{
+            cursor: pointer;
+            color: yellow; //TODO: Dynamic Variables 
+            font-size: 2rem;
+          }
+          .moon{
+            cursor: pointer;
+            color: rgb(100, 42, 237);
+          }
         }
       }
       .navigation {
@@ -42,13 +51,18 @@ header {
           list-style: none;
           margin: 0 40px;
         }
+
         a {
-          font-size: 0.875rem;
+          font-size: 1rem;
           padding: 8px 0;
           text-decoration: none;
           font-weight: 600;
           color: black; //TODO: Dynamic Variables
+          &:hover{ //TODO: Not working for some reason.
+            transform: scale(1.2);
+          }
         }
+
       }
     }
   }
@@ -81,7 +95,7 @@ header {
       border-radius: 100px;
       transition: 0.2s ease-in-out;
       &:hover {
-        background: black;
+        background: white;
         color: black;
       }
     }

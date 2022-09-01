@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Collections from "./pages/Collections";
 import Contact from "./pages/Contact";
+import Cart from './pages/Cart'
 //import Pages from "./utls/Pages"; //TODO: Centralize All Pages? Look into runtime of doing so.
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -19,6 +20,8 @@ function App() {
           <Route path="/" component={<Home />} />
           <Route path="/collections" component={<Collections />} />
           <Route path="/contact" component={<Contact />} />
+          <Route path="/cart" component={<Cart />} />
+
         </Routes>
       </div>
     </BrowserRouter>

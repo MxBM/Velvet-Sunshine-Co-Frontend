@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BsMoon } from "react-icons/bs";
+import { BsMoonFill } from "react-icons/bs";
 import { ImSun } from "react-icons/im";
 import "../scss/components/NavBar.scss";
 
@@ -12,12 +12,12 @@ export default function NavBar({ changeTheme, currentTheme }) {
         <div className="row">
           <div className="header-inner">
             <div className="logo">
-              <span>VelvetSunshine Co.</span>
+              <span href>VelvetSunshine Co.</span> 
               <li onClick={changeTheme} className="theme-mode">
                 {currentTheme === "dark" ? (
                   <ImSun className="sun" />
                 ) : (
-                  <BsMoon className="moon" />
+                  <BsMoonFill className="moon" />
                 )}
               </li>
             </div>
